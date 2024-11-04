@@ -161,12 +161,8 @@ function Search({query, setQuery}) {
     setQuery("");
   })
 
-    document.addEventListener('keydown', callBack);
-
-    return () => {
-      document.addEventListener('keydown', callBack);
-
-    }
+  useEffect(function(){
+ 
   }, [setQuery]);
     return (
     <input
