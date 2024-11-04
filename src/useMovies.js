@@ -24,6 +24,7 @@ export function useMovies(query, callBack) {
             const data = await res.json();
     
             if(data.Response == 'False'){
+                return
               throw new Error("Movie Not Found")
     
             }
